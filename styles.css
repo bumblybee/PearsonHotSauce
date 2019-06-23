@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body.index {
+  background-color: #f6f6f6;
+  background-image: url("images/logo-sketch-small.jpg");
+  background-repeat: repeat;
+  background-position: top;
+  font-family: 'Raleway', sans-serif;
+  height: auto;
+  overflow-x: hidden;
+}
+
+hr {
+  height: 0.6px;
+  width: 96%;
+  border-bottom: 1px inset rgba(235, 228, 228, 0.72);
+  display: block;
+  margin-left: 45px;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px grey;
+  font-family: 'Oswald', sans-serif;
+  height: 45px;
+  list-style-type: none;
+  padding-bottom: 2%;
+}
+
+.navbar a {
+  color: #933a2d;
+}
+
+.fa-registered {
+  font-size: .7rem;
+}
+
+.dragonLogo {
+  filter: contrast(70%);
+  border-radius: 50%;
+  position: absolute;
+  right: -6.5%;
+  top: 4.4%;
+  opacity: 0.88;
+  overflow-x: hideen;
+  width: 34%;
+  z-index: 2;
+  transform: scaleX(1.5);
+}
+
+
+
+#header {
+  background-color: #262626;
+  background-image: linear-gradient(10deg, rgb(32, 32, 32), rgb(51, 49, 49));
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  width: 100vw;
+  height: 100%;
+}
+
+.title {
+  color: #95403f;
+  text-shadow: -0.4px 0.4px grey;
+  font-weight: bold;
+  margin-top: 2%;
+  position: relative;
+  left: 11%;
+}
+
+.heading {
+  font-size: 9rem;
+  letter-spacing: 29px;
+  transform: rotateZ(-2.6deg);
+}
+
+.subtitle {
+  font-size: 9rem;
+  left: 23%;
+  letter-spacing: 15px;
+  margin-bottom: 3%;
+  margin-top: 8%;
+  transform: rotate(2.9deg);
+}
+
+#blog {
+  background-color: #f6f6f6;
+  line-height: 1.9;
+  overflow: hidden;
+  text-align: left;
+  z-index: 2;
+}
+
+.blog-title {
+  color: #3c3f3e;
+  text-shadow: -0.8px 1px #95403f;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 6%;
+  margin-left: 1.9%;
+  text-shadow: -0.5px 0.4px #eae9f0;
+}
+
+.jugs {
+  border-radius: 1%;
+  float: right;
+  height: 240px;
+  width: 240px;
+  margin-left: 5px;
+  margin-top: 1%;
+}
+
+.card {
+  background-color: #fafaf7;
+  border-radius: 2px;
+  box-shadow: 0 5px 5px rgb(147, 146, 144), 0 10px 15px -10px rgb(147, 146, 144);
+  letter-spacing: 1.4px;
+  margin: -3% auto 1%;;
+  overflow: auto;
+  padding: 4%;
+  position: absolute;
+  left: 5%;
+  text-align: left;
+  width: 90%;
+  z-index: 3;
+}
+
+.card h2 {
+  color: #c3594e;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.card p {
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 3%;
+}
+
+.card p::first-letter {
+  color: #7a220c;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.card-text {
+  background-color: #f7f7f4;
+  box-shadow: 0 0 0 3px #f7f7f4, 0 4px 13px black;
+  /* border-radius: 1px; */
+  padding: 2.5%;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+  body.index {
+    background-position: center right;
+  }
+  #header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dragonLogo {
+
+    top: 37%;
+    height: 25%;
+    width: 40%;
+  }
+
+  .title {
+    left: 8%;
+    letter-spacing: 7px;
+    padding: 1%;
+    /* transform: rotate(0); */
+  }
+
+  .heading {
+    font-size: 5rem;
+    margin-top: 17%;
+  }
+
+  .subtitle {
+    font-size: 6rem;
+    margin-top: 5%;
+  }
+
+  .card {
+    left: 5%;
+    width: 89%;
+  }
+
+  hr {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* EXTERNAL PAGES */
+
+
+.about-me-header {
+  margin: 5% 2%;
+}
+
+.contact {
+  background-color: #ffff;
+  margin: 8% auto 0;
+  text-align: center;
+  width: 200px;
+}
+
+.contact-info {
+  color: #7a220c;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1.6px;
+  margin: 12% auto;
+  text-align: center;
+  width: 80%;
+}
+
+.contact-info h6 {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+}
+
+.contact-info p {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.contact-info a {
+  font-size: 1.3rem;
+}
+
+.email {
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: .8rem;
+  text-decoration: none;
+}
+
+.email:hover {
+  color: #f7961b;
+  text-decoration: none;
+}
